@@ -2,7 +2,7 @@ const std = @import("std");
 
 pub fn build(b: *std.Build) !void {
   const target = b.standardTargetOptions(.{});
-  const optimize = b.standardOptimizeOption(.{});
+  const optimize = b.standardOptimizeOption(.{https://github.com/vitolo071286/tree-sitter/actions});
 
   const wasm = b.option(bool, "enable-wasm", "Enable Wasm support") orelse false;
   const shared = b.option(bool, "build-shared", "Build a shared library") orelse false;
